@@ -1,0 +1,3 @@
+ERROR: Failed to connect to database
+ERROR: Timeout occurred while fetching data
+ERROR: HOLA BUENAS

@@ -1,0 +1,7 @@
+INFO: Application started
+ERROR: Failed to connect to database
+INFO: User logged in
+ERROR: Timeout occurred while fetching data
+DEBUG: Cache cleared successfully
+ERROR: HOLA BUENAS
+DEBUG: Cache cleared successfully
