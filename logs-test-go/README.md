@@ -2,9 +2,6 @@
 
 Este proyecto tiene como objetivo demostrar cómo leer y filtrar logs en archivos de texto utilizando Go. El programa lee un archivo de logs (`logs.txt`), filtra las líneas que contienen la palabra "ERROR", y guarda esas líneas en un archivo de salida (`filtered_logs.txt`). Este tipo de filtrado es útil para extraer solo la información relevante de grandes archivos de log.
 
-
-## ¡Perfecto! Ahora que me has proporcionado el código y los archivos de entrada y salida, voy a adaptar el **README** para que esté alineado con el código que has compartido. Vamos a organizarlo de manera clara y estructurada, destacando el funcionamiento del programa y su utilidad.
-
 ---
 
 # Proyecto: Filtrado de Logs en Go
@@ -36,12 +33,15 @@ Este proceso es útil para los administradores de sistemas, desarrolladores y eq
 
 El proyecto está compuesto por los siguientes archivos:
 
+´´´ 
+
 /log-filter/
   ├── logs.txt               # Archivo de logs de entrada (simulado)
   ├── filtered_logs.txt      # Archivo de salida con los logs filtrados
   ├── log_filter.go          # Código fuente del programa en Go
   └── README.md              # Este archivo
 
+´´´ 
 
 ---
 
@@ -58,7 +58,7 @@ El programa realiza las siguientes operaciones:
 
 ### **Código principal**
 
-´´´go
+´´´
 package main
 
 import (
@@ -76,7 +76,6 @@ func main() {
 		return
 	}
 	defer inputFile.Close()
-
 	// Crea el archivo para guardar los logs filtrados
 	outputFile, err := os.Create("filtered_logs.txt")
 	if err != nil {
@@ -84,7 +83,6 @@ func main() {
 		return
 	}
 	defer outputFile.Close()
-
 	// Lee línea por línea y filtra
 	scanner := bufio.NewScanner(inputFile)
 	for scanner.Scan() {
@@ -97,7 +95,6 @@ func main() {
 			}
 		}
 	}
-
 	// Verifica si hubo algún error durante el escaneo
 	if err := scanner.Err(); err != nil {
 		fmt.Println("Error al leer el archivo:", err)
