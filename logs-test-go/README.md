@@ -1,9 +1,3 @@
-## Proyecto: Filtrado de Logs en Go
-
-Este proyecto tiene como objetivo demostrar cómo leer y filtrar logs en archivos de texto utilizando Go. El programa lee un archivo de logs (`logs.txt`), filtra las líneas que contienen la palabra "ERROR", y guarda esas líneas en un archivo de salida (`filtered_logs.txt`). Este tipo de filtrado es útil para extraer solo la información relevante de grandes archivos de log.
-
----
-
 # Proyecto: Filtrado de Logs en Go
 
 Este proyecto tiene como objetivo demostrar cómo leer y filtrar logs en archivos de texto utilizando Go. El programa lee un archivo de logs (`logs.txt`), filtra las líneas que contienen la palabra "ERROR", y guarda esas líneas en un archivo de salida (`filtered_logs.txt`). Este tipo de filtrado es útil para extraer solo la información relevante de grandes archivos de log.
