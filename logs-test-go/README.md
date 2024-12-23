@@ -23,20 +23,18 @@ El programa en Go permite:
 
 Este proceso es útil para los administradores de sistemas, desarrolladores y equipos de DevOps que necesitan revisar rápidamente los logs para identificar problemas y errores críticos.
 
+---
+
 ## Requisitos
 
 -   **Go**: Este proyecto está desarrollado en Go. Asegúrate de tener la última versión de Go instalada en tu máquina.
 -   **Git**: Si deseas controlar el código con Git y GitHub, también necesitas tener Git instalado.
 
+---
+
 ## Estructura del Proyecto
 
 El proyecto está compuesto por los siguientes archivos:
-
-## Rename a file
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
-
-## Delete a file
 
 /log-filter/
   ├── logs.txt               # Archivo de logs de entrada (simulado)
@@ -44,6 +42,8 @@ You can rename the current file by clicking the file name in the navigation bar 
   ├── log_filter.go          # Código fuente del programa en Go
   └── README.md              # Este archivo
 
+
+---
 
 ## Descripción del Código
 
@@ -54,8 +54,11 @@ El programa realiza las siguientes operaciones:
 3.  **Leer y filtrar las líneas**: Utiliza `bufio.NewScanner` para leer el archivo línea por línea y filtra las líneas que contienen la palabra "ERROR".
 4.  **Escribir el archivo de salida**: Si la línea contiene la palabra "ERROR", se escribe en `filtered_logs.txt`.
 
+---
+
 ### **Código principal**
 
+´´´go
 package main
 
 import (
@@ -100,6 +103,8 @@ func main() {
 		fmt.Println("Error al leer el archivo:", err)
 	}
 }
+
+´´´ 
 
 ## Archivos de Entrada y Salida
 
